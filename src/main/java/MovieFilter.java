@@ -21,11 +21,13 @@ public class MovieFilter {
         private final String id;
         private final String title;
         private final String posterPath;
+        private final String description;  // added this field
 
-        public Movie(String id, String title, String posterPath) {
+        public Movie(String id, String title, String posterPath, String description) {
             this.id = id;
             this.title = title;
             this.posterPath = posterPath;
+            this.description = description;
         }
 
         public String getId() {
@@ -38,6 +40,10 @@ public class MovieFilter {
 
         public String getPosterPath() {
             return posterPath;
+        }
+
+        public String getDescription() {  // added this getter method
+            return description;
         }
     }
 
@@ -58,7 +64,8 @@ public class MovieFilter {
                     .map(movie -> new Movie(
                             movie.get("id").getAsString(),
                             movie.get("title").getAsString(),
-                            POSTER_URL + movie.get("poster_path").getAsString()))
+                            POSTER_URL + movie.get("poster_path").getAsString(),
+                            movie.get("overview").getAsString()))  // fetch the description (overview) from the API
                     .collect(Collectors.toList());
         }
     }
