@@ -21,7 +21,7 @@ public class MovieFilter {
         private final String id;
         private final String title;
         private final String posterPath;
-        private final String description;  // added this field
+        private final String description;
 
         public Movie(String id, String title, String posterPath, String description) {
             this.id = id;
@@ -42,7 +42,7 @@ public class MovieFilter {
             return posterPath;
         }
 
-        public String getDescription() {  // added this getter method
+        public String getDescription() {
             return description;
         }
     }
@@ -65,7 +65,7 @@ public class MovieFilter {
                             movie.get("id").getAsString(),
                             movie.get("title").getAsString(),
                             POSTER_URL + movie.get("poster_path").getAsString(),
-                            movie.get("overview").getAsString()))  // fetch the description (overview) from the API
+                            movie.get("overview").getAsString()))
                     .collect(Collectors.toList());
         }
     }

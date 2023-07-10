@@ -48,7 +48,7 @@ public class MovieFilterUI {
         frame.getContentPane().add(inputPanel, BorderLayout.NORTH);
         resultPanel.setLayout(new BoxLayout(resultPanel, BoxLayout.Y_AXIS));
         JScrollPane scrollPane = new JScrollPane(resultPanel);
-        scrollPane.getVerticalScrollBar().setUnitIncrement(16); // adjust this value to suit your needs
+        scrollPane.getVerticalScrollBar().setUnitIncrement(16);
         frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
         resultPane.setEditable(false);
         resultPane.setContentType("text/html");
@@ -66,7 +66,6 @@ public class MovieFilterUI {
         frame.getContentPane().add(scrollPane, BorderLayout.CENTER);
         submitButton.addActionListener(e -> submit());
 
-        // KeyListener to submit when Enter is pressed
         KeyAdapter enterAdapter = new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -76,7 +75,6 @@ public class MovieFilterUI {
             }
         };
 
-        // Add KeyListener to fields
         scoreField.addKeyListener(enterAdapter);
         genreBox.addKeyListener(enterAdapter);
         yearField.addKeyListener(enterAdapter);
@@ -121,12 +119,12 @@ public class MovieFilterUI {
 
                 JPanel moviePanel = new JPanel();
                 moviePanel.setLayout(new BoxLayout(moviePanel, BoxLayout.Y_AXIS));
-                moviePanel.setBorder(new EmptyBorder(10, 10, 10, 10)); // add space between movies
+                moviePanel.setBorder(new EmptyBorder(10, 10, 10, 10));
                 moviePanel.add(poster);
                 moviePanel.add(title);
                 moviePanel.add(description);
 
-                JPanel outerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));  // Changed GridBagLayout to FlowLayout with LEFT alignment
+                JPanel outerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
                 outerPanel.add(moviePanel);
                 resultPanel.add(outerPanel);
             }
