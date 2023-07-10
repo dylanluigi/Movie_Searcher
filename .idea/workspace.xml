@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d6ee0da-c989-441e-a9b8-e58dbd3fb6ef" name="Changes" comment="Movie Searcher">
-      <change afterPath="$PROJECT_DIR$/src/main/java/API.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MovieFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MovieFilterUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MovieFilterUI.java" afterDir="false" />
-    </list>
+    <list default="true" id="9d6ee0da-c989-441e-a9b8-e58dbd3fb6ef" name="Changes" comment="Added movie poster and description to result panel [UPDATE]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688820643902</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added movie poster and description to result panel">
+      <created>1688988687860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688988687860</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added movie poster and description to result panel [UPDATE]">
+      <created>1688988770510</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688988770510</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Movie Searcher" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie Searcher" />
+    <MESSAGE value="Added movie poster and description to result panel" />
+    <MESSAGE value="Added movie poster and description to result panel [UPDATE]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added movie poster and description to result panel [UPDATE]" />
   </component>
 </project>
